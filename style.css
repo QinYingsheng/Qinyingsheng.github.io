@@ -1,4 +1,4 @@
-* {
+3* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -69,4 +69,31 @@ h1 {
 
 p {
     font-size: var(--font-size-small);
+/* 美化表单 */
+form input, form textarea {
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+form button {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: #357abd;
+}
 }
