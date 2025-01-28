@@ -53,3 +53,20 @@ body {
         gap: 1rem;
     }
 }
+:root {
+    --font-size-base: 16px;
+    --font-size-large: 32px;
+    --font-size-small: 14px;
+}
+
+body {
+    font-size: var(--font-size-base);
+}
+
+h1 {
+    font-size: var(--font-size-large);
+}
+
+p {
+    font-size: var(--font-size-small);
+}
