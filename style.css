@@ -109,4 +109,14 @@ form button:hover {
 
 .container {
   padding: 2px 16px;
+}.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
