@@ -7,6 +7,19 @@
         <button type="submit">发送</button>
     </form>
 </section>
+ 
+<script>
+document.getElementById('comment-form').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    const name = document.getElementById('name').value; 
+    const comment = document.getElementById('comment').value; 
+    const commentsDiv = document.getElementById('comments'); 
+    const newComment = document.createElement('div'); 
+    newComment.innerHTML = `<strong>$$${name}</strong>: $${comment}`; 
+    commentsDiv.appendChild(newComment); 
+    document.getElementById('name').value = ''; 
+    document.getElementById('comment').value = ''; 
+}); 
         
        <body style="background-image: url('https://www.helloimg.com/i/2025/01/28/6798e8bd6b4fc.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 </body>
