@@ -62,4 +62,4 @@ $$$result = $$conn->query($$$sql);
     </aside>
     
     <footer>
-        <p>&copy;
+        <p>&copy; 
