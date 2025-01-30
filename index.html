@@ -55,4 +55,17 @@
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <i class=""></i> <!-- 心形图标 -->
+ 
+<script>
+document.getElementById('comment-form').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    const name = document.getElementById('name').value; 
+    const comment = document.getElementById('comment').value; 
+    const commentsDiv = document.getElementById('comments'); 
+    const newComment = document.createElement('div'); 
+    newComment.innerHTML = `<strong>$$${name}</strong>: $${comment}`; 
+    commentsDiv.appendChild(newComment); 
+    document.getElementById('name').value = ''; 
+    document.getElementById('comment').value = ''; 
+}); 
             
